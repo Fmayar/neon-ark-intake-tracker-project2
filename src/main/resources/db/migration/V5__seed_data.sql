@@ -1,0 +1,40 @@
+INSERT INTO habitats (biome, location, min_temp_c, max_temp_c, created_at)
+VALUES
+('FOREST', 'Sector A - Moss Caverns', 8, 18, NOW()),
+('FOREST', 'Sector B - Thornwood Reserve', 10, 24, NOW()),
+('FOREST', 'Sector C - Emerald Canopy', 12, 26, NOW()),
+('DESERT', 'Sector D - Glass Dunes', 28, 46, NOW()),
+('DESERT', 'Sector E - Ember Flats', 25, 44, NOW()),
+('DESERT', 'Sector F - Sunspike Basin', 30, 48, NOW()),
+('OCEAN', 'Sector G - Deep Reef Vault', 2, 12, NOW()),
+('OCEAN', 'Sector H - Coral Intake Bay', 6, 20, NOW()),
+('OCEAN', 'Sector I - Abyssal Holding Zone', 1, 8, NOW()),
+('FOREST', 'Sector J - Moonroot Grove', 9, 21, NOW());
+
+INSERT INTO creatures (name, species, danger_level, condition, notes, habitat_id, created_at)
+VALUES
+('Nyx', 'Void Fox', 'HIGH', 'QUARANTINED', 'Avoid bright light.', 1, NOW()),
+('Mossclaw', 'Forest Troll', 'MEDIUM', 'STABLE', 'Responds calmly to low sound.', 1, NOW()),
+('Luma', 'Glow Deer', 'LOW', 'STABLE', 'Bioluminescent antlers.', 2, NOW()),
+('Thornback', 'Spine Boar', 'MEDIUM', 'STABLE', 'Aggressive during feeding.', 2, NOW()),
+('Echowing', 'Canopy Bat', 'LOW', 'STABLE', 'Uses echo calls near trees.', 3, NOW()),
+('Briarjaw', 'Root Panther', 'HIGH', 'CRITICAL', 'Requires reinforced holding area.', 3, NOW()),
+('Sandspark', 'Glass Lizard', 'LOW', 'STABLE', 'Body reflects strong sunlight.', 4, NOW()),
+('Ashhorn', 'Dune Ram', 'MEDIUM', 'STABLE', 'Needs dry enclosure.', 4, NOW()),
+('Cindermaw', 'Ember Jackal', 'HIGH', 'QUARANTINED', 'Heat-resistant gloves required.', 5, NOW()),
+('Dustveil', 'Mirage Serpent', 'MEDIUM', 'QUARANTINED', 'Hard to observe directly.', 5, NOW()),
+('Sunspike', 'Solar Scorpion', 'HIGH', 'CRITICAL', 'Venom sample pending review.', 6, NOW()),
+('Amberfoot', 'Dune Hare', 'LOW', 'STABLE', 'Fast but non-aggressive.', 6, NOW()),
+('Reefshade', 'Coral Eel', 'MEDIUM', 'STABLE', 'Prefers dark reef tunnels.', 7, NOW()),
+('Brinejaw', 'Abyss Shark', 'HIGH', 'QUARANTINED', 'Do not enter tank alone.', 7, NOW()),
+('Pearlfin', 'Moon Fish', 'LOW', 'STABLE', 'Sensitive to loud vibration.', 8, NOW()),
+('Tideglimmer', 'Crystal Ray', 'LOW', 'STABLE', 'Calm under blue light.', 8, NOW()),
+('Abysscoil', 'Deep Sea Serpent', 'HIGH', 'CRITICAL', 'Pressure tank monitoring required.', 9, NOW()),
+('Blackcurrent', 'Void Octopus', 'MEDIUM', 'QUARANTINED', 'Escapes through small openings.', 9, NOW()),
+('Moonroot', 'Silver Stag', 'LOW', 'STABLE', 'Feeds on moonroot leaves.', 10, NOW()),
+('Nightbloom', 'Shadow Lynx', 'MEDIUM', 'STABLE', 'Nocturnal behavior observed.', 10, NOW()),
+('Ironbark', 'Stone Elk', 'MEDIUM', 'STABLE', 'Heavy impact risk.', 1, NOW()),
+('Glasswing', 'Desert Moth', 'LOW', 'STABLE', 'Fragile wings, low threat.', 4, NOW()),
+('Flarefang', 'Fire Hyena', 'HIGH', 'QUARANTINED', 'Keep water suppression nearby.', 5, NOW()),
+('Coralhorn', 'Reef Stag', 'LOW', 'STABLE', 'Requires saltwater mist.', 8, NOW()),
+('Rootveil', 'Hidden Dryad', 'MEDIUM', 'CRITICAL', 'Unstable containment behavior.', 3, NOW());
